@@ -1,2 +1,2 @@
 station_id;observation_time;latitude;longitude;temperature;dewpoint;windspeed;pressure_hpa;winddirection;elevation_m
-LOWS;2018-03-06T14:50:00Z;47.78;13.02;4;2;6;990;180;430
+LOWS;2018-03-06T15:20:00Z;47.78;13.02;4;2;4;990;0;430
