@@ -1,6 +1,6 @@
 CREATE OR REPLACE VIEW public.treeview_example AS
  SELECT "BUILD_MYFORM_TREES_1519404945_CORE"."NAME" as name,
-    ST_AsText(st_setsrid(st_makepoint("BUILD_MYFORM_TREES_1519404945_CORE"."LOCATION_LAT"::double precision, "BUILD_MYFORM_TREES_1519404945_CORE"."LOCATION_LNG"::double precision), 4326)) AS geom,
+    ST_SetSrid(ST_MakePoint("BUILD_MYFORM_TREES_1519404945_CORE"."LOCATION_LAT"::double precision, "BUILD_MYFORM_TREES_1519404945_CORE"."LOCATION_LNG"::double precision), 4326) AS geom,
     "BUILD_MYFORM_TREES_1519404945_CORE"."LOCATION_ALT"::double precision as Altitude,
 	"BUILD_MYFORM_TREES_1519404945_CORE"."_CREATION_DATE"::timestamp without time zone as creation_date,
 	"BUILD_MYFORM_TREES_1519404945_CORE"."_LAST_UPDATE_DATE"::timestamp without time zone as last_update_date,
@@ -17,4 +17,4 @@ CREATE OR REPLACE VIEW public.treeview_example AS
 	"BUILD_MYFORM_TREES_1519404945_CORE"."USERNAME"::character varying(255) as username,
 	"BUILD_MYFORM_TREES_1519404945_CORE"."TREE_HEIGHT"::integer as tree_height,
 	"BUILD_MYFORM_TREES_1519404945_CORE"."TREE_TYPE"::character varying(255) as tree_type
- FROM odk."BUILD_MYFORM_TREES_1519404945_CORE";
+   FROM odk."BUILD_MYFORM_TREES_1519404945_CORE";
