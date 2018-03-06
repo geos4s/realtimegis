@@ -1,5 +1,6 @@
 CREATE OR REPLACE VIEW public.treeview_example AS
- SELECT "BUILD_MYFORM_TREES_1519404945_CORE"."NAME" as name,
+ SELECT row_number() OVER (PARTITION BY true::boolean) AS row_number,
+    "BUILD_MYFORM_TREES_1519404945_CORE"."NAME" as name,
     ST_SetSrid(ST_MakePoint("BUILD_MYFORM_TREES_1519404945_CORE"."LOCATION_LAT"::double precision, "BUILD_MYFORM_TREES_1519404945_CORE"."LOCATION_LNG"::double precision), 4326) AS geom,
     "BUILD_MYFORM_TREES_1519404945_CORE"."LOCATION_ALT"::double precision as Altitude,
 	"BUILD_MYFORM_TREES_1519404945_CORE"."_CREATION_DATE"::timestamp without time zone as creation_date,
