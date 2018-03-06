@@ -1,0 +1,20 @@
+CREATE OR REPLACE VIEW public.treeview_example AS
+ SELECT "BUILD_MYFORM_TREES_1519404945_CORE"."NAME" as name,
+    ST_AsText(st_setsrid(st_makepoint("BUILD_MYFORM_TREES_1519404945_CORE"."LOCATION_LAT"::double precision, "BUILD_MYFORM_TREES_1519404945_CORE"."LOCATION_LNG"::double precision), 4326)) AS geom,
+    "BUILD_MYFORM_TREES_1519404945_CORE"."LOCATION_ALT"::double precision as Altitude,
+	"BUILD_MYFORM_TREES_1519404945_CORE"."_CREATION_DATE"::timestamp without time zone as creation_date,
+	"BUILD_MYFORM_TREES_1519404945_CORE"."_LAST_UPDATE_DATE"::timestamp without time zone as last_update_date,
+	"BUILD_MYFORM_TREES_1519404945_CORE"."_MODEL_VERSION"::integer as model_version,
+	"BUILD_MYFORM_TREES_1519404945_CORE"."_UI_VERSION"::integer as ui_version,
+	"BUILD_MYFORM_TREES_1519404945_CORE"."_IS_COMPLETE"::boolean as is_complete,
+	"BUILD_MYFORM_TREES_1519404945_CORE"."_SUBMISSION_DATE"::timestamp without time zone as submission_date,
+	"BUILD_MYFORM_TREES_1519404945_CORE"."_MARKED_AS_COMPLETE_DATE"::timestamp without time zone as marked_complete_date,
+	"BUILD_MYFORM_TREES_1519404945_CORE"."SUBSCRIBER_ID"::character varying(255) as subscriber_id,
+	"BUILD_MYFORM_TREES_1519404945_CORE"."META_INSTANCE_ID"::character varying(255) as meta_instance_id,
+	"BUILD_MYFORM_TREES_1519404945_CORE"."LOCATION_ACC"::numeric(38,10) as location_accuracy,
+	"BUILD_MYFORM_TREES_1519404945_CORE"."DATE"::timestamp without time zone as date,
+	"BUILD_MYFORM_TREES_1519404945_CORE"."DESCRIPTION"::character varying(255) as description,
+	"BUILD_MYFORM_TREES_1519404945_CORE"."USERNAME"::character varying(255) as username,
+	"BUILD_MYFORM_TREES_1519404945_CORE"."TREE_HEIGHT"::integer as tree_height,
+	"BUILD_MYFORM_TREES_1519404945_CORE"."TREE_TYPE"::character varying(255) as tree_type
+ FROM odk."BUILD_MYFORM_TREES_1519404945_CORE";
