@@ -1,1 +1,2 @@
-LOWS,2018-03-07T02:50:00Z,47.78,13.02,4,2,19,160,993.9187735127,430
+station_id,observation_time,latitude,longitude,temperature,dewpoint,windspeed,winddirection,pressure_hpa,elevation_m
+ZSNJ,2018-03-07T02:00:00Z,31.75,118.87,6,5,15,60,1023.9163643219,33
