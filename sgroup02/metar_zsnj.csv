@@ -1,2 +1,2 @@
 stationid;observationtime;latitude;longitude;temperature;dewpoint;windspeed;winddirection;pressure_hpa;elevation_m
-ZSNJ;2018-03-30T04:00:00Z;31.75;118.87;17;14;19;60;1021;33
+ZSNJ;2018-03-30T05:00:00Z;31.75;118.87;19;15;15;60;1020;33
