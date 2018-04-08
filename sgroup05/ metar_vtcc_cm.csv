@@ -1,2 +1,2 @@
 station_id;observation_time;latitude;longitude;temperature;dewpoint;windspeed;winddirection;elevation_m;pressure_hpa
-VTCC;2018-04-08T01:00:00Z;18.77;98.97;22;11;24;360;314;1021
+VTCC;2018-04-08T02:00:00Z;18.77;98.97;23;11;22;10;314;1021
