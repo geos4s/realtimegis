@@ -1,2 +1,2 @@
 station_ID;latitude;longitude;elevation_m;observation_time;temperature;dewpoint;wind_dir_degrees;wind_speed;pressure_hpa
-EDDT;52.57;13.32;37;2018-04-14T04:20:00Z;11;10;250;28;1012
+EDDT;52.57;13.32;37;2018-04-14T04:50:00Z;11;9;260;30;1012
