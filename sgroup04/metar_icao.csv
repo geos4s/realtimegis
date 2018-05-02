@@ -1,2 +1,5 @@
 station_ID;latitude;longitude;elevation_m;observation_time;temperature;dewpoint;wind_dir_degrees;wind_speed;pressure_hpa
-RJTT;35.53;139.77;8;2018-05-02T18:00:00Z;21;21;200;41;1002
+FAOR;-26.12;28.22;1700;2018-05-02T18:00:00Z;17;7;290;9;1025
+HRYR;-1.97;30.12;1497;2018-05-02T17:00:00Z;20;17;0;4;1020
+YSSY;-33.95;151.17;3;2018-05-02T18:00:00Z;15;12;350;15;1019
+EGLL;51.48;-0.45;24;2018-05-02T18:20:00Z;12;4;300;15;1010
